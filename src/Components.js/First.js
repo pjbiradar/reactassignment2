@@ -28,12 +28,12 @@ function First() {
             <h1>EMPLOYEE FEED BACK FORM</h1>
                 <form action=''>
                 <label className='first'> Name</label>
-                <input  className='second' onChange={change} type='text' id='name' name='name' value={setFill.value}/>                      
+                <input  className='second' onChange={change} type='text' id='name' name='name' value={fill.value}/>                      
                 <br></br>
                 <label className='third'> Department</label>
-                <input className='four' onChange={change} type='text' id='dep' name='dep' value={setFill.value}/> <br></br>
+                <input className='four' onChange={change} type='text' id='dep' name='dep' value={fill.value}/> <br></br>
                 <label className='five'>Rating</label>
-                <input className='six' onChange={change} type='number' id='rating' name='rating' value={setFill.value} />
+                <input className='six' onChange={change} type='number' id='rating' name='rating' value={fill.value} />
                  <br></br> <br></br>
                 </form>
                  <button onClick={move} className='submit' >Submit</button> <br></br>
@@ -44,7 +44,7 @@ function First() {
                             const {name,dep,rating,id}=value;
                             return(
                                 <div className='magic' key={id}>
-                                    <p>Name:{name}  |  Department:{dep}  |  Ratings:{rating}</p>
+                                    <p>Name:{name}  |  Department:{dep}  | Ratings:{rating}</p>
                                 </div>
                             )
                         } )
